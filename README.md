@@ -34,4 +34,5 @@ python3.12 with libraries (directly run rediscogs.py)
 ## 使用リソース
 
 Fonts : Iosevka Nerd Font, Sarasa J Nerd Font
-Free Web ICons : https://www.flaticon.com/ 
+
+Free Web Icons : https://www.flaticon.com/ 
