@@ -22,7 +22,11 @@ LP / VinylやCD等のデータ整理において、毎回Discogs(https://www.dis
 
 ## 動作環境
 
-python3.12 with libraries
+Windows 10/11 (using exe file)
+
+or
+
+python3.12 with libraries (directory run rediscogs.py)
 + PyQt6                    (https://www.riverbankcomputing.com/software/pyqt/)
 + python3-discogs-client   (https://github.com/joalla/discogs_client)
 + urllib                   (https://docs.python.org/3/library/urllib.html)
