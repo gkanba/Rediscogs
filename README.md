@@ -26,7 +26,7 @@ Windows 10/11 (using exe file)
 
 or
 
-python3.12 with libraries (directory run rediscogs.py)
+python3.12 with libraries (directly run rediscogs.py)
 + PyQt6                    (https://www.riverbankcomputing.com/software/pyqt/)
 + python3-discogs-client   (https://github.com/joalla/discogs_client)
 + urllib                   (https://docs.python.org/3/library/urllib.html)
