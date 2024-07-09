@@ -1,0 +1,1 @@
+pyuic6.exe .\rediscogs.ui -o .\ui.py

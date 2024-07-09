@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WidgetSearch</class>
+ <widget class="QWidget" name="WidgetSearch">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QCheckBox::indicator:checked{
+	width: 36px;
+	height: 36px;
+	image: url(:/images/icons/Toggle_On.png);
+}
+
+QCheckBox::indicator:unchecked{
+	width: 36px;
+	height: 36px;
+	image: url(:/images/icons/Toggle_Off.png);
+}
+
+QLineEdit{
+	border-radius: 10px;
+}</string>
+  </property>
+  <widget class="QGroupBox" name="GBox_Search">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>0</y>
+     <width>275</width>
+     <height>370</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Search</string>
+   </property>
+   <widget class="QGroupBox" name="GBox_E">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>255</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Release Year</string>
+    </property>
+    <widget class="QCheckBox" name="CBox_E">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>15</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LEdit_E">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="GBox_A">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>255</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Catalog No.</string>
+    </property>
+    <widget class="QCheckBox" name="CBox_A">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>15</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LEdit_A">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="GBox_B">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>255</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Release Title</string>
+    </property>
+    <widget class="QCheckBox" name="CBox_B">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>15</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LEdit_B">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="GBox_D">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>255</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Release Country</string>
+    </property>
+    <widget class="QCheckBox" name="CBox_D">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>15</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LEdit_D">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="GBox_C">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>255</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Release Artist</string>
+    </property>
+    <widget class="QCheckBox" name="CBox_C">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>15</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LEdit_C">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Button_Search">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>255</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Button_Search{
+	background-color: rgba(128, 128, 128, 255);
+	border-radius: 10px;
+	border: 2px;
+	border-color: rgb(244, 255, 255);
+	padding: 5px;
+	margin: 1px;
+	image: url(:/images/icons/Search.png);
+}
+
+#Button_Search:hover{
+	background-color: rgba(192, 192, 192, 192);
+	border-radius: 10px;
+	border: 2px;
+	padding: 5px;
+	border-color: #5af2e9;
+	margin: 1px;
+	image: url(:/images/icons/Search.png);
+}
+
+#Button_Search:pressed{
+	background-color: rgba(255, 255, 255, 192);
+	border-radius: 10px;
+	border: 2px;
+	padding: 5px;
+	border-color: #5af2e9;
+	margin: 1px;
+	image: url(:/images/icons/Search.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBox_List">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>370</y>
+     <width>275</width>
+     <height>345</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Results</string>
+   </property>
+   <widget class="QListView" name="LView_Releases">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>255</width>
+      <height>315</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBox_Release">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>0</y>
+     <width>905</width>
+     <height>715</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Release View</string>
+   </property>
+   <widget class="QLabel" name="Label_Artwork">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Label_Artwork{
+	image: {
+			filter: drop-shadow(5px 5px 10px #000000);
+	};
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/images/icons/Artwork_Sample.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_Title">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>130</y>
+      <width>591</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Iosevka NFM SemiBold</family>
+      <pointsize>49</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Label_Title
+{
+	color: rgba(255, 255 ,255 ,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>緩りらら</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_MainArtist">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>230</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Iosevka NFM SemiBold</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Label_MainArtist
+{
+	color: rgba(255, 255 ,255 ,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>笠原瑠斗</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_MainArtistImage">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>230</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Iosevka NFM SemiBold</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/images/icons/Artwork_Sample.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_Year">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>80</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Iosevka NFM SemiBold</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Label_Year
+{
+	color: rgba(255, 255 ,255 ,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>2023</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTableView" name="TView_Tracks">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>885</width>
+      <height>405</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QHeaderView::section{
+	background-color: transparent;
+	color: white;
+	font-size: 16px;
+}
+
+#TView_Tracks{
+	background-color: transparent;
+	color: rgba(255, 255, 255, 255);
+}</string>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::NoPen</enum>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_Save">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>130</y>
+      <width>100</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Button_Save{
+	background-color: rgba(128, 128, 128, 180);
+	border-radius: 10px;
+	border: 2px;
+	border-color: rgb(244, 255, 255);
+	padding: 5px;
+	margin: 1px;
+	image: url(:/images/icons/File.png);
+}
+
+#Button_Save:hover{
+	background-color: rgba(192, 192, 192, 180);
+	border-radius: 10px;
+	border: 2px;
+	padding: 5px;
+	border-color: #5af2e9;
+	margin: 1px;
+	image: url(:/images/icons/File.png);
+}
+
+#Button_Save:pressed{
+	background-color: rgba(255, 255, 255, 180);
+	border-radius: 10px;
+	border: 2px;
+	padding: 5px;
+	border-color: #5af2e9;
+	margin: 1px;
+	image: url(:/images/icons/File.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_Label">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>80</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Iosevka NFM SemiBold</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Label_Label
+{
+	color: rgba(255, 255 ,255 ,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>CBS Sony</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_Country">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>80</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Iosevka NFM SemiBold</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Label_Country
+{
+	color: rgba(255, 255 ,255 ,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Japan</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_Format">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>80</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Iosevka NFM SemiBold</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Label_Format
+{
+	color: rgba(255, 255 ,255 ,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>CD</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="Frame_Right">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>0</y>
+     <width>915</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Frame_Right{
+	background-color: qlineargradient(spread:pad, x1:0.295, y1:0, x2:0.653, y2:1, stop:0 rgba(217, 175, 217, 255), stop:1 rgba(151, 217, 225, 255));
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="Frame_Right_Upper">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>280</y>
+      <width>915</width>
+      <height>430</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Frame_Right_Upper{
+	background-color: qlineargradient(spread:pad, x1:0.295, y1:0, x2:0.63, y2:1, stop:0 rgba(95, 118, 127, 197), stop:1 rgba(34, 34, 35, 255));
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="Frame_Left">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>285</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#Frame_Left{
+	background-color: transparent;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>Frame_Left</zorder>
+  <zorder>Frame_Right</zorder>
+  <zorder>GBox_Search</zorder>
+  <zorder>GBox_List</zorder>
+  <zorder>GBox_Release</zorder>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
