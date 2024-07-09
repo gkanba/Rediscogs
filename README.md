@@ -30,3 +30,8 @@ python3.12 with libraries (directly run rediscogs.py)
 + PyQt6                    (https://www.riverbankcomputing.com/software/pyqt/)
 + python3-discogs-client   (https://github.com/joalla/discogs_client)
 + urllib                   (https://docs.python.org/3/library/urllib.html)
+
+## 使用リソース
+
+Fonts : Iosevka Nerd Font, Sarasa J Nerd Font
+Free Web ICons : https://www.flaticon.com/ 
